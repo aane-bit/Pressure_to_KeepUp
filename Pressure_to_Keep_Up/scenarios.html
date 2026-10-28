@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore everyday social media comparison scenarios.">
+    <title>Scenarios | The Pressure to Keep Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="activity-page">
+
+    <!-- Header -->
+    <header class="app-header">
+
+        <a href="index.html" class="brand" aria-label="The Pressure to Keep Up home">
+            <span class="brand-icon brand-logo" aria-hidden="true">
+                <svg viewBox="0 0 40 40">
+                    <path class="logo-orbit logo-orbit-outer" d="M31.8 9.2 A15 15 0 0 1 32.5 30 A15 15 0 0 1 10 31.5"/>
+                    <path class="logo-orbit logo-orbit-inner" d="M8.5 25 A12 12 0 0 1 11 10 A12 12 0 0 1 27 9"/>
+                    <circle class="logo-self-ring" cx="20" cy="20" r="6.5"/>
+                    <circle class="logo-self" cx="20" cy="20" r="3"/>
+                    <circle class="logo-point" cx="32.5" cy="30" r="1.8"/>
+                </svg>
+            </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="checkin.html" class="nav-link">Check-In</a>
+            <a href="scenarios.html" class="nav-link active">Scenarios</a>
+            <a href="pattern.html" class="nav-link">Pattern</a>
+            <a href="reflection.html" class="nav-link">Reflect</a>
+            <a href="boundary.html" class="nav-link">Boundary</a>
+            <a href="takeaway.html" class="nav-link">Takeaway</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+
+        <button class="menu-button" id="menuButton" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <!-- Mobile navigation -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="checkin.html">Check-In</a>
+        <a href="scenarios.html">Scenarios</a>
+        <a href="pattern.html">Pattern</a>
+        <a href="reflection.html">Reflect</a>
+        <a href="boundary.html">Boundary</a>
+        <a href="takeaway.html">Takeaway</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <!-- Page progress -->
+    <div class="app-progress" aria-hidden="true">
+        <div class="app-progress-fill" id="scenarioProgress" style="width: 33.333%;"></div>
+    </div>
+
+    <!-- Main -->
+    <main class="scenario-main">
+        <section class="scenario-shell">
+
+            <!-- Page intro -->
+            <div class="scenario-heading">
+                <a href="checkin.html" class="back-home">← Back to Check-In</a>
+                <p class="eyebrow">02 · SCENARIOS</p>
+                <h1>What happens <em>in the moment?</em></h1>
+                <p>Imagine each situation happening while you're scrolling. Choose the reaction that feels closest to what might naturally go through your mind.</p>
+            </div>
+
+            <!-- Experience -->
+            <div class="scenario-experience">
+                <div class="scenario-status">
+                    <span id="scenarioCounter">Scenario 1 of 3</span>
+                    <div class="scenario-dots" aria-hidden="true">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <!-- Scenario 1 -->
+                <article class="scenario-screen active" data-scenario="0">
+                    <div class="scenario-layout">
+
+                        <!-- Social post -->
+                        <div class="mock-post">
+                            <div class="mock-post-header">
+                                <div class="mock-avatar">
+                                    A
+                                </div>
+                                <div>
+                                    <strong>Former Classmate</strong>
+                                    <span>Just now · ✦</span>
+                                </div>
+                                <span class="post-menu">•••</span>
+                            </div>
+                            <div class="achievement-visual">
+                                <div class="achievement-decoration">
+                                    ✦
+                                </div>
+                                <div class="achievement-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M7 4h10v5a5 5 0 0 1-10 0V4Z"/>
+                                        <path d="M9 19h6M12 14v5"/>
+                                        <path d="M7 6H4v2c0 2 1.3 3.5 3.4 3.8M17 6h3v2c0 2-1.3 3.5-3.4 3.8"/>
+                                    </svg>
+                                </div>
+                                <p>Finally made it.</p>
+                                <strong>Graduation Day</strong>
+                                <span>One chapter ends, another begins.</span>
+                            </div>
+                            <div class="mock-reactions">
+                                <span>♡ 1.2K</span>
+                                <span>48 comments</span>
+                            </div>
+                            <p class="mock-caption"><strong> Former Classmate </strong> Years of hard work finally paid off. Excited for what's next! 🎓</p>
+                        </div>
+
+                        <!-- Reaction -->
+                        <div class="scenario-question">
+                            <p class="question-label">ACHIEVEMENT & TIMELINE</p>
+                            <h2>You see this while you're still figuring out your own direction. What thought comes closest?</h2>
+                            <div class="scenario-choices">
+                                <button class="scenario-choice" type="button" data-feedback="comparison">
+                                    <span>A</span>
+                                    <p>“They're already moving forward. Why am I still here?”</p>
+                                </button>
+                                <button class="scenario-choice" type="button" data-feedback="mixed">
+                                    <span>B</span>
+                                    <p>“I'm happy for them, but I wish I were there too.”</p>
+                                </button>
+                                <button class="scenario-choice" type="button" data-feedback="grounded">
+                                    <span>C</span>
+                                    <p>“Good for them. My path doesn't have to match theirs.”</p>
+                                </button>
+                            </div>
+                            <div class="scenario-feedback" aria-live="polite"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Scenario 2 -->
+                <article class="scenario-screen" data-scenario="1">
+                    <div class="scenario-layout">
+                        <div class="mock-post">
+                            <div class="mock-post-header">
+                                <div class="mock-avatar influencer-avatar">
+                                    ✦
+                                </div>
+                                <div>
+                                    <strong>Lifestyle Creator</strong>
+                                    <span>Suggested for you</span>
+                                </div>
+                                <span class="post-menu">•••</span>
+                            </div>
+                            <div class="beauty-visual">
+                                <div class="beauty-phone">
+                                    <div class="beauty-face">
+                                        <span class="face-eye eye-left"></span>
+                                        <span class="face-eye eye-right"></span>
+                                        <span class="face-smile"></span>
+                                    </div>
+                                    <div class="beauty-sparkle sparkle-one">
+                                        ✦
+                                    </div>
+                                    <div class="beauty-sparkle sparkle-two">
+                                        ✦
+                                    </div>
+                                    <span class="beauty-tag">effortless ✨</span>
+                                </div>
+                            </div>
+                            <div class="mock-reactions">
+                                <span>♡ 28.4K</span>
+                                <span>View comments</span>
+                            </div>
+                            <p class="mock-caption"><strong> Lifestyle Creator </strong> Feeling confident today. My current favorites are linked in my profile.</p>
+                        </div>
+                        <div class="scenario-question">
+                            <p class="question-label">APPEARANCE & IDEALS</p>
+                            <h2>The creator looks polished and confident. What thought might come first?</h2>
+                            <div class="scenario-choices">
+                                <button class="scenario-choice" type="button" data-feedback="comparison">
+                                    <span>A</span>
+                                    <p>“Why can't my skin, body, or style look like that?”</p>
+                                </button>
+                                <button class="scenario-choice" type="button" data-feedback="mixed">
+                                    <span>B</span>
+                                    <p>“I like the look. Maybe I should change something too.”</p>
+                                </button>
+                                <button class="scenario-choice" type="button" data-feedback="grounded">
+                                    <span>C</span>
+                                    <p>“They look good, but I don't know the full story behind this post.”</p>
+                                </button>
+                            </div>
+                            <div class="scenario-feedback" aria-live="polite"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Scenario 3 -->
+                <article class="scenario-screen" data-scenario="2">
+                    <div class="scenario-layout">
+                        <div class="mock-post">
+                            <div class="mock-post-header">
+                                <div class="mock-avatar user-avatar">
+                                    YOU
+                                </div>
+                                <div>
+                                    <strong>Your Post</strong>
+                                    <span>2 hours ago</span>
+                                </div>
+                                <span class="post-menu">•••</span>
+                            </div>
+                            <div class="validation-visual">
+                                <div class="photo-placeholder">
+                                    <span>YOUR POST</span>
+                                    <div class="photo-heart">
+                                        ♡
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mock-reactions low-reactions">
+                                <span>♡ 12</span>
+                                <span>2 comments</span>
+                            </div>
+                            <p class="mock-caption"><strong> You </strong> A moment you felt good enough to share.</p>
+                        </div>
+                        <div class="scenario-question">
+                            <p class="question-label">LIKES & VALIDATION</p>
+                            <h2>You expected more reactions, but the post stays quiet. What do you think?</h2>
+                            <div class="scenario-choices">
+                                <button class="scenario-choice" type="button" data-feedback="comparison">
+                                    <span>A</span>
+                                    <p>“Maybe people don't like me or what I posted.”</p>
+                                </button>
+                                <button class="scenario-choice" type="button" data-feedback="mixed">
+                                    <span>B</span>
+                                    <p>“I know likes shouldn't matter, but I still keep checking.”</p>
+                                </button>
+                                <button class="scenario-choice" type="button" data-feedback="grounded">
+                                    <span>C</span>
+                                    <p>“The number of reactions doesn't decide whether the moment mattered.”</p>
+                                </button>
+                            </div>
+                            <div class="scenario-feedback" aria-live="polite"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Completion -->
+                <article class="scenario-screen scenario-complete" id="scenarioComplete">
+                    <div class="complete-orbit" aria-hidden="true">
+                        <div class="complete-ring"></div>
+                        <div class="complete-center">
+                            YOU
+                        </div>
+                        <span class="orbit-word word-see">SEE</span>
+                        <span class="orbit-word word-compare">COMPARE</span>
+                        <span class="orbit-word word-feel">FEEL</span>
+                    </div>
+                    <div class="complete-copy">
+                        <p class="question-label">SOMETHING CONNECTS THEM</p>
+                        <h2>Different posts can trigger the same kind of pressure.</h2>
+                        <p>An achievement, an idealized appearance, or even the number of reactions on a post can become a point of comparison. The next section shows how that moment can grow into a repeating pattern.</p>
+                        <a href="pattern.html" class="primary-button">
+                            See the Pattern
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Controls -->
+                <div class="scenario-controls" id="scenarioControls">
+                    <button type="button" class="secondary-button" id="previousScenario" disabled>
+                        ← Back
+                    </button>
+                    <p id="scenarioMessage" aria-live="polite">Choose the thought that feels closest.</p>
+                    <button type="button" class="primary-button continue-button" id="nextScenario" disabled>
+                        Continue
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

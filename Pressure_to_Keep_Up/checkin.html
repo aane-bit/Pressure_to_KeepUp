@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A private check-in about social media comparison and self-concept.">
+    <title>Check-In | The Pressure to Keep Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="activity-page">
+
+    <!-- Header -->
+    <header class="app-header">
+
+        <a href="index.html" class="brand" aria-label="The Pressure to Keep Up home">
+            <span class="brand-icon brand-logo" aria-hidden="true">
+                <svg viewBox="0 0 40 40">
+                    <path class="logo-orbit logo-orbit-outer" d="M31.8 9.2 A15 15 0 0 1 32.5 30 A15 15 0 0 1 10 31.5"/>
+                    <path class="logo-orbit logo-orbit-inner" d="M8.5 25 A12 12 0 0 1 11 10 A12 12 0 0 1 27 9"/>
+                    <circle class="logo-self-ring" cx="20" cy="20" r="6.5"/>
+                    <circle class="logo-self" cx="20" cy="20" r="3"/>
+                    <circle class="logo-point" cx="32.5" cy="30" r="1.8"/>
+                </svg>
+            </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="checkin.html" class="nav-link active">Check-In</a>
+            <a href="scenarios.html" class="nav-link">Scenarios</a>
+            <a href="pattern.html" class="nav-link">Pattern</a>
+            <a href="reflection.html" class="nav-link">Reflect</a>
+            <a href="boundary.html" class="nav-link">Boundary</a>
+            <a href="takeaway.html" class="nav-link">Takeaway</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+
+        <button class="menu-button" id="menuButton" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </header>
+
+    <!-- Mobile navigation -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="checkin.html">Check-In</a>
+        <a href="scenarios.html">Scenarios</a>
+        <a href="pattern.html">Pattern</a>
+        <a href="reflection.html">Reflect</a>
+        <a href="boundary.html">Boundary</a>
+        <a href="takeaway.html">Takeaway</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <!-- Progress -->
+    <div class="app-progress" aria-hidden="true">
+        <div class="app-progress-fill" id="checkinProgress"></div>
+    </div>
+
+    <!-- Main -->
+    <main class="activity-main">
+        <section class="activity-shell">
+
+            <!-- Side information -->
+            <aside class="activity-sidebar">
+                <a href="index.html" class="back-home">← Back to home</a>
+                <div class="sidebar-content">
+                    <p class="eyebrow">01 · CHECK-IN</p>
+                    <h1>Start by <em>noticing.</em></h1>
+                    <p>There are no right or wrong answers. This is simply a moment to notice how social media comparison may show up in your experience.</p>
+                </div>
+                <div class="privacy-note">
+                    <div class="privacy-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="5" y="10" width="14" height="10" rx="2"/>
+                            <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Your reflection is private.</strong>
+                        <p>Your answers stay in this browser experience and are not submitted.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Question area -->
+            <div class="question-panel">
+                <div class="question-top">
+                    <span id="questionCounter">Question 1 of 3</span>
+                    <span id="questionPercent">33%</span>
+                </div>
+
+                <!-- Question 1 -->
+                <article class="question-screen active" data-question="0">
+                    <div class="question-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6Z"/>
+                            <circle cx="12" cy="12" r="2.5"/>
+                        </svg>
+                    </div>
+                    <p class="question-label">YOUR EXPERIENCE</p>
+                    <h2>When someone your age posts an achievement, how often do you compare your progress with theirs?</h2>
+                    <div class="answer-grid" role="group" aria-label="Question 1 answers">
+                        <button type="button" class="answer-card" data-value="0">
+                            <span class="answer-dot"></span>
+                            <span><strong>Rarely</strong> <small> I usually stay focused on my own progress. </small></span>
+                        </button>
+                        <button type="button" class="answer-card" data-value="1">
+                            <span class="answer-dot"></span>
+                            <span><strong>Sometimes</strong> <small> I notice myself comparing once in a while. </small></span>
+                        </button>
+                        <button type="button" class="answer-card" data-value="2">
+                            <span class="answer-dot"></span>
+                            <span><strong>Often</strong> <small> Other people's progress can affect how I see mine. </small></span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Question 2 -->
+                <article class="question-screen" data-question="1">
+                    <div class="question-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="4"/>
+                            <path d="M5 21c.8-4.3 3.1-6.5 7-6.5s6.2 2.2 7 6.5"/>
+                        </svg>
+                    </div>
+                    <p class="question-label">APPEARANCE & SELF-IMAGE</p>
+                    <h2>After seeing polished photos or influencers online, do you ever feel pressure to change how you look?</h2>
+                    <div class="answer-grid" role="group" aria-label="Question 2 answers">
+                        <button type="button" class="answer-card" data-value="0">
+                            <span class="answer-dot"></span>
+                            <span><strong>Rarely</strong> <small> Online appearances usually do not affect mine. </small></span>
+                        </button>
+                        <button type="button" class="answer-card" data-value="1">
+                            <span class="answer-dot"></span>
+                            <span><strong>Sometimes</strong> <small> I occasionally compare my appearance. </small></span>
+                        </button>
+                        <button type="button" class="answer-card" data-value="2">
+                            <span class="answer-dot"></span>
+                            <span><strong>Often</strong> <small> What I see online can change how I feel about myself. </small></span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Question 3 -->
+                <article class="question-screen" data-question="2">
+                    <div class="question-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 20s-7-4.2-8.8-8C1.7 8.8 3.4 5.5 6.7 5.2c2.2-.2 4.1 1 5.3 2.7 1.2-1.7 3.1-2.9 5.3-2.7 3.3.3 5 3.6 3.5 6.8C19 15.8 12 20 12 20Z"/>
+                        </svg>
+                    </div>
+                    <p class="question-label">ONLINE VALIDATION</p>
+                    <h2>When something you post receives fewer likes or reactions than you expected, does it affect how you feel?</h2>
+                    <div class="answer-grid" role="group" aria-label="Question 3 answers">
+                        <button type="button" class="answer-card" data-value="0">
+                            <span class="answer-dot"></span>
+                            <span><strong>Rarely</strong> <small> Reactions usually do not change how I feel. </small></span>
+                        </button>
+                        <button type="button" class="answer-card" data-value="1">
+                            <span class="answer-dot"></span>
+                            <span><strong>Sometimes</strong> <small> I notice it, but the feeling usually passes. </small></span>
+                        </button>
+                        <button type="button" class="answer-card" data-value="2">
+                            <span class="answer-dot"></span>
+                            <span><strong>Often</strong> <small> Reactions can influence how I feel about myself. </small></span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Result -->
+                <article class="question-screen result-screen" id="checkinResult">
+                    <div class="result-symbol" aria-hidden="true">
+                        ✦
+                    </div>
+                    <p class="question-label">YOUR REFLECTION</p>
+                    <h2 id="resultTitle">You noticed something important.</h2>
+                    <p class="result-description" id="resultDescription"></p>
+                    <div class="result-reminder">
+                        <span>Remember</span>
+                        <blockquote>Someone else's milestone is not a deadline for your own.</blockquote>
+                    </div>
+                    <a href="scenarios.html" class="primary-button result-button">
+                        Explore the Scenarios
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <!-- Controls -->
+                <div class="question-controls" id="questionControls">
+                    <button type="button" class="secondary-button" id="previousQuestion" disabled>
+                        ← Back
+                    </button>
+                    <p class="selection-message" id="selectionMessage" aria-live="polite">Choose the answer that feels closest to you.</p>
+                    <button type="button" class="primary-button continue-button" id="nextQuestion" disabled>
+                        Continue
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M13 6l6 6-6 6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
